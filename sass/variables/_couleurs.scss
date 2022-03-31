@@ -1,0 +1,53 @@
+/* ---------------- BACKGROUND */
+$color__background-body : #171716;
+$color__background-body-clip : #2f91e0;
+$color__background-main : rgba(99, 89, 185, 0.616);
+$color__background-cours : hsl(207, 59%, 77%);
+$color__background-header : rgb(18, 35, 131);
+$color__background-barre : rgb(0, 68, 255);
+$color__background-footer : #333;
+$color__background-link : #00f;
+$color__background-link-hover : rgb(197, 123, 231);
+$color__background-menu: rgb(184, 233, 252);
+
+/* ---------------- LIENS */
+$color__link : rgb(122, 122, 255);
+$color__link-hover : #00a;
+$color__link-visited : rgb(154, 154, 200);
+/* ---------------- LIENS FOOTER */
+$color__link__footer : rgb(176, 175, 255);
+$color__link__footer-hover : hsl(189, 80%, 49%);
+$color__link__footer-visited : rgb(37, 127, 230);
+/* ---------------- LIENS HEADER */
+$color__link__header : hsl(214, 66%, 83%);
+$color__link__header-hover : hsl(226, 46%, 69%);
+$color__link__header-visited : hsl(268, 53%, 54%);
+
+/* ---------------- FONT */
+$color__font-header : rgb(148, 146, 250);
+$color__font-main :rgb(255, 255, 255);
+$color__font-barre : rgb(255, 255, 255);
+$color__font-footer : rgb(188, 189, 255);
+$color__font-menu-titre : rgb(22, 49, 168);
+$color__font-menu-texte : rgb(7, 23, 92);
+
+/* ----------------- Bouton / lien menu */
+$color__bouton__color : rgb(255, 230, 0);
+$color__bouton__background : rgb(21, 92, 223);
+$color__bouton__color--hover : rgb(236, 220, 71);
+$color__bouton__background--hover : rgb(12, 92, 240);
+
+/* ---------------- MIXINS CUSTOM */
+// $color__link__menu__principal: red;
+// $color__link__menu__principal-visited: red;
+// $color__link__menu__principal-hover: red;
+// $color__link__footer: red;
+// $color__link__footer-visited: red;
+// $color__link__footer-hover: red;
+
+// $background__link__footer: red;
+// $background__link__footer-visited: red;
+// $background__link__footer-hover: red;
+// $background__link__menu__principal: red;
+// $background__link__menu__principal-visited: red;
+// $background__link__menu__principal-hover: red;

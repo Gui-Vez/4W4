@@ -1,0 +1,81 @@
+// Liens mixins de la couleur des liens
+@mixin links(	$couleur, 
+				$couleur--visited, 
+				$couleur--hover)
+{
+	color: $couleur;
+
+	&:visited {
+		color: $couleur--visited;
+	}
+
+	&:hover,
+	&:focus,
+	&:active {
+		color: $couleur--hover;
+	}
+
+	&:focus {
+		outline: thin dotted;
+	}
+
+	&:hover,
+	&:active {
+		outline: 0;
+	}
+}
+
+
+// Liens du site
+a
+{
+	@include links(	$color__link,
+					$color__link-visited, 
+					$color__link-hover )
+}
+
+// Liens du pied de page
+ .site__footer a
+ {
+	@include links(	$color__link__footer,
+					$color__link__footer-visited, 
+					$color__link__footer-hover );
+}
+
+// Liens de l'entête
+.site__header a
+{
+	@include links(	$color__link__header,
+					$color__link__header-visited, 
+					$color__link__header-hover );
+}
+
+
+/* --------------- MIXIN CUSTOM --------------- */
+// .site__footer .menu-item a
+// {
+// 	@include links__menu 
+// 	(
+// 		$color__link__footer,
+// 		$color__link__footer-visited, 
+// 		$color__link__footer-hover,
+
+// 		$background__link__footer,
+// 		$background__link__footer-visited, 
+// 		$background__link__footer-hover
+// 	);
+// }
+
+// .menu-principal .menu-item a
+// {
+// 	@include links__menu 
+// 	(
+// 		$color__link__menu__principal,
+// 		$color__link__menu__principal-visited, 
+// 		$color__link__menu__principal-hover,
+
+// 		$background__link__menu__principal,
+// 		$background__link__menu__principal-visited, 
+// 		$background__link__menu__principal-hover
+// 	);
+// }

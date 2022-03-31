@@ -1,0 +1,66 @@
+// Entête du site
+.site__header {
+    background-color: $color__background-header;
+    color: $color__font-header;
+    padding-left: 10px;
+    display: flex;
+
+    // Logo de l'entête
+    .header__logo {
+      display: flex;
+      align-items: center;
+    }
+
+    // Si l'écran ne dépasse pas la largeur de la tablette,
+    @media screen and (max-width : $largeur__media--tablette)
+    {
+        // Ne pas afficher le logo de l'entête
+        .header__logo
+        {
+            display: none;
+        }
+    }
+
+    // Titre de l'entête
+    .header__titre {
+      font-size: 3em;
+      font-family: $font__titre;
+      margin: 2rem;
+      display: flex;
+      align-items: center;
+    }
+
+    // Description de l'entête
+    .header__description {
+      font-size: 1.5rem;
+      font-family: $font__main;
+      display: flex;
+      align-items: center;
+    }
+
+    // Titre de l'entête
+    .titre__header
+    {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+
+  // Barre des liens externes
+.util
+{
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  padding: 1rem;
+
+  // Liens de la barre de l'entête
+  &__lien
+  {
+    background-color: white;
+    border-radius: 50%;
+    padding: 1rem;
+    margin: 0.5rem;
+  }
+}

@@ -1,0 +1,74 @@
+// Menu burger
+#burger {
+    position : absolute;
+    transition : transform .3s;
+    transform : rotate(0);
+}
+
+// Bouton associé au menu burger
+#chk-burger
+{
+    display: none;
+}
+
+// Lorsque le menu burger est cliqué, faire une rotation
+#chk-burger:checked ~ #burger {
+    transform : rotate(90deg);
+}
+
+// Ne pas afficher le conteneur du menu principal
+.menu-principal-container {
+    display : none;
+}
+
+// Lorsque le menu burger est activé, afficher le conteneur du menu principal
+#chk-burger:checked ~ .menu-principal-container{
+    display : block;
+}
+
+// Menu de la barre verticale
+.menu{
+    list-style-type: none;
+    margin : 0;
+    padding :0;
+}
+
+// Item du menu de la barre verticale
+.menu-item{
+    margin:0;
+    padding : 0;
+
+    // Lien de l'item
+    a{
+        display : block;
+        text-decoration: none;
+        padding : 4px;
+        // background-color: $color__background-link;
+    }
+}
+
+// Barre de recherche de l'entête
+.header__searchbar
+{
+    display: none;
+}
+
+// Si l'écran est au minimum à la largeur d'une tablette,
+@media screen and (min-width : $largeur__media--tablette)
+{
+    // Enlever le menu burger
+    #burger {
+        display : none;
+    }
+
+    // Afficher le conteneur du menu principal
+    .menu-principal-container {
+        display : block;
+    }
+
+    // Afficher la barre de recherche de l'entête
+    .header__searchbar
+    {
+        display: block;
+    }
+}

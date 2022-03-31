@@ -1,0 +1,112 @@
+// Fond d'écran principal
+.principal
+{
+    margin: 20px;
+    padding: 10px 15px;
+    background-color: $color__background-main;
+    border-radius: 5px;
+    box-shadow: rgb(57, 68, 62) 1px -1px 10px;
+}
+
+// Fond d'écran formations
+.formation
+{
+    display: flex;
+    flex-direction: column;
+
+    // Titre de la formation
+    &__titre {
+        font-size: 2rem;
+        color: $color__font-main;
+        margin: 10px 0px;
+        font-family: $font__titre;
+    }
+
+    // Liste de la formation
+    &__liste {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    // Cours de la formation
+    &__cours {
+        background-position: 90% 10%;
+        background-repeat: no-repeat;
+        background-color: $color__background-cours;
+        box-shadow: rgb(57, 64, 68) 1px -1px 10px;
+        border-radius: 5px;
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        @media screen and (min-width : $largeur__media--tablette){
+            width: 45%;
+        }
+        @media screen and (min-width : $largeur__media--desktop){
+            width: 30%;
+        }
+        padding: 10px;
+    }
+
+    .web
+    {
+        background-image: url('https://s2.svgbox.net/octicons.svg?ic=globe-bold');
+        
+    }
+
+    .jeu
+    {
+        background-image: url('https://s2.svgbox.net/materialui.svg?ic=games');
+    }
+
+    .comm
+    {
+        background-image: url('https://s2.svgbox.net/octicons.svg?ic=users');
+    }
+
+    .design
+    {
+        background-image: url('https://s2.svgbox.net/materialui.svg?ic=color_lens');
+        // 3d https://s2.svgbox.net/materialui.svg?ic=view_in_ar
+        // palette peinture https://s2.svgbox.net/materialui.svg?ic=color_lens
+        // image https://s2.svgbox.net/octicons.svg?ic=image
+    }
+
+    .utilitaire
+    {
+        background-image: url('https://s2.svgbox.net/octicons.svg?ic=tools-bold');
+    }
+
+    .video
+    {
+        background-image: url('https://s2.svgbox.net/octicons.svg?ic=device-camera-video');
+        //https://s2.svgbox.net/materialui.svg?ic=movie
+        //camera https://s2.svgbox.net/materialui.svg?ic=voice_chat
+        // camera video https://s2.svgbox.net/octicons.svg?ic=device-camera-video
+        // video https://s2.svgbox.net/materialui.svg?ic=duo
+    }
+
+    .creation-3d
+    {
+        background-image: url('https://s2.svgbox.net/materialui.svg?ic=view_in_ar');
+    }
+}
+
+// Titre du cours
+.cours__titre {
+    font-size: 1.5rem;
+    color: $color__font-main;
+    margin: 5px 0px;
+}
+
+// Sigle du cours
+.cours__sigle {
+    font-size: 1.2rem;
+    color: rgb(138, 83, 83);
+    margin: 0;
+}
+
+// Description du cours
+.cours__description {
+    font-size: 1rem;
+}

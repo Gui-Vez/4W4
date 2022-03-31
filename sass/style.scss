@@ -1,0 +1,50 @@
+/*
+theme name: Lab 5 Guillaume Vézina
+Author: Guillaume Vézina
+Author URI: https://github.com/Gui-Vez/4w4
+Description: Ce thème est sujet d'un travail pratique en Web du cours 4W4 où l'objectif est d'inclure la liste des cours du TIM.
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: cidw-4w4
+
+*/
+/* ---------------------------------------------------------
+VARIABLES
+--------------------------------------------------------- */
+@import "variables/couleurs";
+@import "variables/typo";
+@import "variables/structure";
+
+/* ---------------------------------------------------------
+INITIALISATION
+--------------------------------------------------------- */
+@import "initialisation/normalize";
+@import "initialisation/box-sizing";
+
+/* ---------------------------------------------------------
+ÉLÉMENTS
+--------------------------------------------------------- */
+@import "elements/links";
+@import "elements/balises";
+
+/* ---------------------------------------------------------
+COMPOSANTES
+--------------------------------------------------------- */
+@import "composantes/contenu";
+@import "composantes/cours";
+@import "composantes/footer";
+@import "composantes/header";
+@import "composantes/navigation";
+@import "composantes/navigation_categorie_cours";
+@import "composantes/recherche";
+
+/* ---------------------------------------------------------
+LAYOUT
+--------------------------------------------------------- */
+@import "layout/layout";
+
+/* ---------------------------------------------------------
+ANIMATIONS
+--------------------------------------------------------- */
+@import "composantes/animation/entete";

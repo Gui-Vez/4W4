@@ -1,0 +1,34 @@
+/* -------------------------------------------------
+Navigation catégorie cours
+---------------------------------------------------- */
+.menu-categorie_cours-container // nav
+{
+    margin: 1rem;
+
+    .menu // ul
+    {   
+        display : flex;
+        justify-content: center;
+
+        .menu-item // li
+        { 
+            margin : 0 10px;
+            background-color: $color__bouton__background;
+            
+            a
+            {
+                color: $color__bouton__color;
+            }
+
+            &:hover
+            {
+                background-color: $color__bouton__background--hover;
+
+                a
+                {
+                    color: $color__bouton__color--hover;
+                }
+            }
+        }
+    }
+}

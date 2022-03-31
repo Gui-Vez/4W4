@@ -1,0 +1,176 @@
+// Animation blocs entête
+.animation
+{
+    display: flex;
+    width: 100%;
+    // border: 1px solid red;
+    justify-content: space-around;
+
+    // Bloc d'animation (liens)
+    &__bloc
+    {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 4rem;
+        // position: absolute;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        background-color: $color__link;
+        color: white;
+        transform: translateX(0) translateY(0);
+        animation: anim_bloc 2s 1s forwards;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+    }
+
+    // Délai des animations de blocs
+    &__bloc:nth-of-type(1)
+    {
+        animation-delay: 0s;
+    }
+
+    &__bloc:nth-of-type(2)
+    {
+        animation-delay: 0.2s;
+    }
+
+    &__bloc:nth-of-type(3)
+    {
+        animation-delay: 0.4s;
+    }
+
+    &__bloc:nth-of-type(4)
+    {
+        animation-delay: 0.6s;
+    }
+
+    &__bloc:nth-of-type(5)
+    {
+        animation-delay: 0.8s;
+    }
+    
+    // Transitions couleurs & position Y des blocs d'animation
+    @keyframes anim_bloc
+    {
+        0%
+        {
+            transform: translateY(-100vh);
+        }
+
+        30%
+        {
+            background-color: rgb(255, 0, 0);
+        }
+
+        50%
+        {
+            background-color: rgb(255, 255, 0);
+        }
+
+        70%
+        {
+            background-color: rgb(0, 255, 255);
+        }
+
+        100%
+        {
+            transform: translateY(0);
+            background-color: rgb(0, 255, 255);
+        }
+    }
+}
+
+
+
+// Animation titre accueil
+.titre-anim
+{
+  text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+  font-size: 75px;
+  text-align: center;
+
+  display: flex;
+  justify-content: center;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+
+// Bloc d'animation "Allo"
+.anim-allo
+{
+    width:70px;
+    height:47px;
+    background: #92B901;
+    color: #ffffff;
+    position: relative;
+    font-weight:bold;
+    font-size:20px;
+    padding:10px;
+    animation:anim-allo 5s 1;
+    animation-iteration-count: infinite;
+    border-radius:5px;
+}
+  
+// Transitions des positions du bloc "allo"
+@keyframes anim-allo
+{
+    0% {transform: rotate(0deg);left:0%;}
+    25% {transform: rotate(20deg);left:0%;}
+    50% {transform: rotate(0deg);left:90%;}
+    55% {transform: rotate(0deg);left:90%;}
+    70% {transform: rotate(0deg);left:90%;background:#1ec7e6;}
+    100% {transform: rotate(-360deg);left:0%;}
+}
+
+
+// Animation description du cours
+h6
+{
+    position: relative;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-size: 2em;
+    letter-spacing: 4px;
+    overflow: hidden;
+    background: linear-gradient(90deg, #000, rgb(46, 46, 46), #000);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    animation: description 4s linear infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(255, 255, 255, 0);
+  }
+  
+  // Transitions des positions du bloc cachant la description du cours
+  @keyframes description
+  {
+    0% {
+      background-position: -500%;
+    }
+
+    100% {
+      background-position: 500%;
+    }
+  }

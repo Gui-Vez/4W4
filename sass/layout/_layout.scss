@@ -1,0 +1,152 @@
+/*
+theme name: 4W4 - Guillaume Vézina
+*/
+
+// Site général
+.site
+{
+    //background-color: rgb(122, 176, 207);
+    background-color: $color__background-body;
+    font-family: $font__main;
+}
+
+// Image de fond de la page principale (parallèelograme)
+.home::after
+{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    clip-path: polygon(66% 0, 89% 0, 50% 100%, 28% 100%);
+    background-color: $color__background-body-clip;
+    z-index: -1;
+}
+
+// Entête
+.site__header{
+    grid-area: header;  
+    background-color: rgba($color__background-header, .5);
+}
+
+// Barre verticale
+.site__barre{
+    grid-area: sidebar;
+    background-color: $color__background-barre;
+}
+
+// Contenu principal
+.site__main
+{
+    grid-area: main;
+    background-color: rgba($color__background-main, .5);
+
+    &__single
+    {
+        margin: 1rem;
+        padding: 2rem;
+
+        background-color: $color__background-menu;
+        border-radius: 1rem;
+
+        box-shadow:
+       inset 0 -3em 3em rgba(0,0,0,0.1),
+             0 0  0 2px rgb(255,255,255),
+             0.3em 0.3em 1em rgba(0,0,0,0.3);
+
+        // Titre de la page single
+        &__titre
+        {
+            color: $color__font-menu-titre;
+
+            text-align: center;
+            font-weight: bolder;
+            font-size: larger;
+            font-size: 1.5rem;
+        }
+
+        // Texte de la page single
+        &__texte
+        {
+            color: $color__font-menu-texte;
+
+            line-height: 2rem;
+        }
+    }
+}
+
+// Page d'accueil
+.front-page
+{
+    margin: 1rem;
+    padding: 2rem;
+
+    background-color: $color__background-menu;
+    border-radius: 1rem;
+
+    box-shadow:
+       inset 0 -3em 3em rgba(0,0,0,0.1),
+             0 0  0 2px rgb(255,255,255),
+             0.3em 0.3em 1em rgba(0,0,0,0.3);
+
+
+    // Titre de la page d'accueil
+    &__titre
+        {
+            color: $color__font-menu-titre;
+
+            font-size: larger;
+        }
+
+        // Texte de la page d'accueil
+        &__texte
+        {
+            color: $color__font-menu-texte;
+
+            font-size: 1.5rem;
+            text-align: center;
+        }
+}
+
+// Recherche principale
+.search__main
+{
+    grid-area: main;
+    background-color: $color__background-menu;
+    margin: 2rem;
+    padding: 1rem;
+    text-align: center;
+}
+
+// Pied de page
+.site__footer{
+    grid-area: footer;
+    background-color: $color__background-footer;
+}
+
+// Layout du site (Mobile)
+.site {
+	display: grid;
+	grid-template-columns: auto;
+	grid-template-areas:
+		"sidebar"
+        "header"
+		"main"
+		"footer";
+}
+
+// Si l'écran ne dépasse pas la largeur d'une tablette,
+@media screen and (min-width : $largeur__media--tablette)
+{
+    // Layout du site (Tablette & Ordinateur)
+    .site {
+        grid-template-columns: ($size__site-barre) auto;
+        grid-template-areas:
+            "header header"
+            "sidebar main"
+            "footer footer";
+    }
+}

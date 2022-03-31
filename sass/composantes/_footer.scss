@@ -1,0 +1,111 @@
+// Conteneur du pied de page
+.site__footer
+{
+  display: flex;
+  flex-direction: column;
+
+  // Colonne du pied de page
+  &__colonne
+  {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1px solid #ddd;
+
+    // Section du pied de page
+    section
+    {
+      display: flex;
+      flex-direction: column;
+      // border: 1px solid #ddd;
+      flex: 0 0 30%;
+      margin-bottom: 1rem;
+    }
+  }
+  
+  // Ligne horizontale du pied de page
+  &__ligne
+  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+
+// Conteneur du pied de page
+.site__footer {
+    font-family: $font__titre;
+    background-color: $color__background-footer;
+    padding: 15px;
+
+    &__menu{ // .site__footer__menu
+
+      &__ul{ // .site__footer__menu__ul
+          display : flex;
+          list-style-type: none;
+          justify-content: center;
+          .menu-item{ // .site__footer__menu__ul .menu-item
+              margin : 10px 5px;
+            a{ // .site__footer__menu__ul .menu-item a
+              display : flex;
+              align-items: center;
+              padding : 3px;
+              svg { // .site__footer__menu__ul .menu-item a svg
+                color: aqua;
+              }
+            }
+          }
+      }
+    }
+  }
+
+  // Titre, présentation et auteur du pied de page
+.footer__titre,
+.footer__presentation,
+.footer__author
+{
+  color: $color__font-footer;
+  text-align: center;
+}
+
+// Adresse, liens et article du pied de page
+.footer__adresse,
+.footer__liens,
+.footer__article
+{
+  text-align: center;
+  color:rgb(138, 176, 211);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  // Texte inclut
+  & p
+  {
+    margin: 0.5rem;
+    line-height: 1.5rem;
+  }
+}
+
+// Contenu de l'article du pied de page
+.footer__article *
+{
+  padding: 0.15rem;
+}
+
+// Mention copyright du pied de page
+.footer__copyright
+{
+  text-align: center;
+  color: rgb(200, 200, 200);
+}
+
+// Lignes horizontales du pied de page
+.footer_lignes
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1.5rem;
+}
