@@ -6,7 +6,6 @@
         <h2 class="formation__titre">Liste des cours du programme TIM</h2>
 
         <nav class="menu-categorie_cours-container">
-            <?php if (is_category('cours')) : ?>
             <?php wp_nav_menu(array("menu" => "menu_cours")) ?>
         </nav>
         
@@ -51,7 +50,6 @@
                 <?php endif ?>
         </div>
     </section>
-    <?php endif; ?>
 </main>
 
 <!-- Obtenir le pied de page -->
