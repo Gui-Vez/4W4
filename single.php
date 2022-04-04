@@ -32,7 +32,7 @@ get_header();
             <?php if (has_post_thumbnail()): ?>
                 <!-- Afficher cette image -->
                 <figure class="article__contenu__figure">
-                    <?php the_post_thumbnail("thumbnail"); ?>
+                    <?php the_post_thumbnail("large"); ?>
                 </figure>
             <?php endif ?>
 
