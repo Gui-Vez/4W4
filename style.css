@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*
-theme name: Lab 5 Guillaume Vézina
+theme name: Exercice 3 Guillaume Vézina
 Author: Guillaume Vézina
 Author URI: https://github.com/Gui-Vez/4W4-vezina-guillaume
 Description: Ce thème est sujet d'un travail pratique en Web du cours 4W4 où l'objectif est d'inclure la liste des cours du TIM.
@@ -448,6 +448,11 @@ h3, h4, h5 {
   font-family: "Poppins", sans-serif;
 }
 
+a {
+  font-size: clamp(0.7rem, 0.8vw, 1rem);
+  font-family: "Poppins", sans-serif;
+}
+
 /* ---------------------------------------------------------
 COMPOSANTES
 --------------------------------------------------------- */
@@ -550,6 +555,15 @@ COMPOSANTES
 }
 
 .formation__titre {
+  text-align: center;
+}
+
+.formation .menu span.menu-item-description, .formation .menu hr {
+  display: none;
+}
+
+.titre_categorie h2 {
+  color: white;
   text-align: center;
 }
 
@@ -778,6 +792,132 @@ Navigation catégorie cours
 
 .menu-categorie_cours-container .menu .menu-item:hover a {
   color: #ecdc47;
+}
+
+.menu-categorie_cours-container .menu .current-menu-item {
+  background-color: #155b70;
+}
+
+.menu-categorie_cours-container .menu .current-menu-item a {
+  color: #ffbb00;
+}
+
+.menu-accueil-container,
+.menu-evenement-container {
+  display: flex;
+  justify-content: center;
+}
+
+.menu-accueil-container .menu ul,
+.menu-evenement-container .menu ul {
+  width: 80%;
+  justify-content: center;
+}
+
+.menu-accueil-container .menu, .menu-accueil-container ul,
+.menu-evenement-container .menu,
+.menu-evenement-container ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.menu-accueil-container .menu .accueil__cours .menu-item-icone, .menu-accueil-container ul .accueil__cours .menu-item-icone,
+.menu-evenement-container .menu .accueil__cours .menu-item-icone,
+.menu-evenement-container ul .accueil__cours .menu-item-icone {
+  background-image: url("https://s2.svgbox.net/octicons.svg?ic=file-badge-bold");
+}
+
+.menu-accueil-container .menu .menu-item, .menu-accueil-container .menu .page_item, .menu-accueil-container ul .menu-item, .menu-accueil-container ul .page_item,
+.menu-evenement-container .menu .menu-item,
+.menu-evenement-container .menu .page_item,
+.menu-evenement-container ul .menu-item,
+.menu-evenement-container ul .page_item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #155cdf;
+  flex: 0 0 20%;
+  height: 155px;
+  border-radius: 5%;
+}
+
+.menu-accueil-container .menu .menu-item a, .menu-accueil-container .menu .page_item a, .menu-accueil-container ul .menu-item a, .menu-accueil-container ul .page_item a,
+.menu-evenement-container .menu .menu-item a,
+.menu-evenement-container .menu .page_item a,
+.menu-evenement-container ul .menu-item a,
+.menu-evenement-container ul .page_item a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: clamp(1rem, 2vw, 2.2rem);
+  color: #ffe600;
+  height: 100%;
+  text-align: center;
+}
+
+.menu-accueil-container .menu .menu-item a .menu-item-description, .menu-accueil-container .menu .page_item a .menu-item-description, .menu-accueil-container ul .menu-item a .menu-item-description, .menu-accueil-container ul .page_item a .menu-item-description,
+.menu-evenement-container .menu .menu-item a .menu-item-description,
+.menu-evenement-container .menu .page_item a .menu-item-description,
+.menu-evenement-container ul .menu-item a .menu-item-description,
+.menu-evenement-container ul .page_item a .menu-item-description {
+  font-size: clamp(0.8rem, 1.5vw, 1rem);
+}
+
+.menu-accueil-container .menu .menu-item .menu-item-icone, .menu-accueil-container .menu .page_item .menu-item-icone, .menu-accueil-container ul .menu-item .menu-item-icone, .menu-accueil-container ul .page_item .menu-item-icone,
+.menu-evenement-container .menu .menu-item .menu-item-icone,
+.menu-evenement-container .menu .page_item .menu-item-icone,
+.menu-evenement-container ul .menu-item .menu-item-icone,
+.menu-evenement-container ul .page_item .menu-item-icone {
+  border: 1px solid #aaa;
+  width: 2rem;
+  height: 2rem;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  margin-top: auto;
+}
+
+.menu-accueil-container .menu .menu-item .accueil__prof, .menu-accueil-container .menu .page_item .accueil__prof, .menu-accueil-container ul .menu-item .accueil__prof, .menu-accueil-container ul .page_item .accueil__prof,
+.menu-evenement-container .menu .menu-item .accueil__prof,
+.menu-evenement-container .menu .page_item .accueil__prof,
+.menu-evenement-container ul .menu-item .accueil__prof,
+.menu-evenement-container ul .page_item .accueil__prof {
+  font-size: clamp(0.8rem, 1.5vw, 1rem);
+}
+
+.menu-accueil-container .menu .menu-item .accueil__aide, .menu-accueil-container .menu .page_item .accueil__aide, .menu-accueil-container ul .menu-item .accueil__aide, .menu-accueil-container ul .page_item .accueil__aide,
+.menu-evenement-container .menu .menu-item .accueil__aide,
+.menu-evenement-container .menu .page_item .accueil__aide,
+.menu-evenement-container ul .menu-item .accueil__aide,
+.menu-evenement-container ul .page_item .accueil__aide {
+  border: 1px solid #aaa;
+  width: 2rem;
+  height: 2rem;
+  background-repeat: no-repeat;
+}
+
+.menu-accueil-container .menu .page_item, .menu-accueil-container ul .page_item,
+.menu-evenement-container .menu .page_item,
+.menu-evenement-container ul .page_item {
+  height: 75px;
+  align-items: center;
+  margin: 5px;
+  align-items: center;
+}
+
+.menu-accueil-container .menu .page_item li, .menu-accueil-container ul .page_item li,
+.menu-evenement-container .menu .page_item li,
+.menu-evenement-container ul .page_item li {
+  display: flex;
+}
+
+.menu-accueil-container .menu .page_item a, .menu-accueil-container ul .page_item a,
+.menu-evenement-container .menu .page_item a,
+.menu-evenement-container ul .page_item a {
+  font-size: clamp(0.5rem, 1vw, 1.1rem);
+  justify-content: center;
 }
 
 .footer__searchbar {

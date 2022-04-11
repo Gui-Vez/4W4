@@ -2,6 +2,15 @@
 <main class="principal">
     <!-- <h1>-------CATEGORY-COURS-------</h1> -->
     <section class="formation">
+
+    <div class="titre_categorie">
+        <?php
+            $slug_categorie_de_la_page = trouve_la_categorie(array('cours', 'web', 'jeu', 'utilitaire', '3d', 'design'));
+            $ma_categorie = get_category_by_slug($slug_categorie_de_la_page);
+            echo "<h2>" . $ma_categorie -> name . "</h2>";
+        ?>
+    </div>
+
         <!-- Page de la liste des formations -->
         <h2 class="formation__titre">Liste des cours du programme TIM</h2>
 

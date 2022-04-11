@@ -53,6 +53,16 @@
         <h6 class="front-page__texte">
             <?php the_content(); ?>
         </h6>
+
+        <nav class="menu-accueil-container">
+            <?php wp_nav_menu(array("menu"=>"accueil",
+                                    "container"=>"nav")); ?>
+        </nav>
+
+        <nav class="menu-evenement-container">
+            <?php wp_nav_menu(array("menu"=>"evenement",
+                                    "container"=>"nav")); ?>
+        </nav>
     
         <?php endif ?>
     </div>
