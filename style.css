@@ -802,6 +802,18 @@ Navigation catégorie cours
   color: #ffbb00;
 }
 
+.menu-accueil-container,
+.menu-evenement-container {
+  display: flex;
+  justify-content: center;
+}
+
+.menu-accueil-container .menu ul,
+.menu-evenement-container .menu ul {
+  width: 80%;
+  justify-content: center;
+}
+
 .menu-accueil-container .menu, .menu-accueil-container ul,
 .menu-evenement-container .menu,
 .menu-evenement-container ul {
