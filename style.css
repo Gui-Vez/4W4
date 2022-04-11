@@ -808,10 +808,29 @@ Navigation catégorie cours
   justify-content: center;
 }
 
-.menu-accueil-container .menu ul,
-.menu-evenement-container .menu ul {
+.menu-accueil-container #menu-evenement,
+.menu-evenement-container #menu-evenement {
   width: 80%;
   justify-content: center;
+}
+
+.menu-accueil-container #menu-evenement li,
+.menu-evenement-container #menu-evenement li {
+  width: 20%;
+  height: 80%;
+  margin: 5px;
+}
+
+.menu-accueil-container #menu-evenement li hr, .menu-accueil-container #menu-evenement li .menu-item-description, .menu-accueil-container #menu-evenement li .menu-item-icone,
+.menu-evenement-container #menu-evenement li hr,
+.menu-evenement-container #menu-evenement li .menu-item-description,
+.menu-evenement-container #menu-evenement li .menu-item-icone {
+  display: none;
+}
+
+.menu-accueil-container #menu-evenement li a,
+.menu-evenement-container #menu-evenement li a {
+  font-size: clamp(0.8rem, 1.5vw, 1rem);
 }
 
 .menu-accueil-container .menu, .menu-accueil-container ul,

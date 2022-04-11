@@ -4,10 +4,27 @@
     display: flex;
     justify-content: center;
 
-    .menu ul
+    #menu-evenement
     {  
         width: 80%;
         justify-content: center;
+
+        li
+        {
+            width: 20%;
+            height: 80%;
+            margin: 5px;
+
+            hr, .menu-item-description, .menu-item-icone
+            {
+                display: none;
+            }
+
+            a
+            {
+                font-size: clamp(.8rem, 1.5vw, 1rem);
+            }
+        }
     }
 
     .menu, ul // ul
