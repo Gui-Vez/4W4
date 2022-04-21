@@ -150,8 +150,8 @@ function cidw_4w4_pre_get_posts(WP_Query $query)
 	// ...
 
 	if (is_admin()
-		|| !is_main_query()
-		|| !is_category(array('cours', 'web', 'jeu', 'design', 'video', '3d', 'utilitaire')))
+		|| !$query->is_main_query()
+		|| !$query->is_category(array('cours', 'web', 'jeu', 'design', 'video', '3d', 'utilitaire')))
 	{	
 		$query->set('posts_per_page', -1);
 		$query->set('orderby', 'title');

@@ -52,6 +52,14 @@ wp_nav_menu(array(
     <p class="footer__copyright">&copy;2022 Guillaume Vézina - Collège de Maisonneuve</p>
 </footer>
 
+<div class="boite_modale">
+    <button class="boite__modale__fermeture">X</button>
+
+    <p class="boite__modale_texte">
+        Ceci est un premier test de boite modale
+    </p>
+</div>
+
 <!-- Obtenir le pied de page de Wordpress -->
 <?php wp_footer(); ?>
 </body>
