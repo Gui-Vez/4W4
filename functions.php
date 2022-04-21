@@ -5,6 +5,11 @@ function cidw_4w4_enqueue(){
     wp_enqueue_style('4w4-le-style', get_template_directory_uri() . '/style.css', array(), filemtime(get_template_directory() . '/style.css'), false);
 
 	wp_enqueue_style('cidw-4w4-google-font',"https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Poppins:wght@300;400;500&family=Roboto&display=swap", false);
+	
+	wp_enqueue_script('cidw-4w4-boite-modale',
+					  get_template_directory_uri() . '/javascript/boite-modale.js',
+					  array(), filemtime(get_template_directory() . '/javascript/boite-modale.js'),
+					  true); // true pour intégrer le js en bas du document
 }
 
 add_action("wp_enqueue_scripts", "cidw_4w4_enqueue");
@@ -150,8 +155,8 @@ function cidw_4w4_pre_get_posts(WP_Query $query)
 	// ...
 
 	if (is_admin()
-		|| !is_main_query()
-		|| !is_category(array('cours', 'web', 'jeu', 'design', 'video', '3d', 'utilitaire')))
+		|| !$query->is_main_query()
+		|| !$query->is_category(array('cours', 'web', 'jeu', 'design', 'video', '3d', 'utilitaire')))
 	{	
 		$query->set('posts_per_page', -1);
 		$query->set('orderby', 'title');

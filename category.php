@@ -36,7 +36,8 @@
                         $titreFiltreCours = substr($titre, 3, -6);
                         $nbHeures = substr($titre, -6);
                         $sigleCours = substr($titre, 0, 4);
-                        $descCours = get_the_excerpt();
+                        $descCours = wp_trim_words(get_the_content(), 15, "<button class='cours__desc__ouvrir'>La suite</button>");
+                        // $descCours = get_the_excerpt();
                         ?>
 
                         <!-- Afficher l'image du cours -->
@@ -54,6 +55,7 @@
                         <div class="cours__nbre-heure"><?= $nbHeures; ?></div>
                         <p class="cours__sigle"><?= $sigleCours; ?> </p>
                         <p class="cours__desc"> <?= $descCours; ?></p>
+                        <p class="cours__departement"> <?= $departement; ?></p>
                     </article>
                 <?php endwhile ?>
                 <?php endif ?>

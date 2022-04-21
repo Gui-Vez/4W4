@@ -19,8 +19,36 @@ get_header();
         <!-- S'il y a des articles, afficher cet article -->
         <?php if (have_posts()): the_post(); ?>
 
-        <!-- Titre de la page individuelle -->
-        <?php the_title(); ?>
+        <article class="evenement">
+
+            <!-- Titre de la page individuelle -->
+            <?php the_title(); ?>
+
+            <section class="evenement__resume">
+                <?php the_field('resume'); ?>
+            </section>
+
+            <p class="evenement__endroit">
+                <?php the_field('endroit') ?>
+            </p>
+
+            <p class="evenement__date">
+                <?php the_field('date') ?>
+            </p>
+
+            <p class="evenement__heure">
+                <?php the_field('heure') ?>
+            </p>
+
+            <p>
+                <?php the_field('organisateur') ?>
+            </p>
+
+            <?php
+                $image = get_field('image');
+            ?>
+
+        </article>
 
         <!-- Texte de la page de présentation -->
         <?php the_content(); ?>
