@@ -966,7 +966,7 @@ Navigation catégorie cours
   justify-content: center;
 }
 
-.boite_modale {
+.boite__modale {
   position: absolute;
   top: 25vh;
   left: 25vw;
@@ -974,12 +974,12 @@ Navigation catégorie cours
   background-color: #f00;
   width: 50vw;
   height: 50vh;
-  transform: scale(0.1);
+  transition: all 1s ease-in-out;
+  transform: scale(0);
 }
 
-.boite_modale:hover {
+.ouvrir {
   transform: scale(1);
-  transition: all 1s ease-in-out;
 }
 
 /* ---------------------------------------------------------
