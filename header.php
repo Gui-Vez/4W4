@@ -17,7 +17,7 @@
 
     <?php show_admin_bar(true); ?>
 </head>
-<body  <?php body_class("site"); ?>>
+<body <?php body_class("site"); ?> style="background-color:<?= get_theme_mod("background_body") ?>;" >
 <header class="site__header">
     <!-- Lien du titre du site -->
     <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home" class="titre__header">
