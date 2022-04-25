@@ -507,6 +507,10 @@ COMPOSANTES
   }
 }
 
+.formation__cours__invisible {
+  display: none;
+}
+
 .formation .web {
   background-image: url("https://s2.svgbox.net/octicons.svg?ic=globe-bold");
 }
@@ -976,10 +980,12 @@ Navigation catégorie cours
   height: 50vh;
   transition: all 1s ease-in-out;
   transform: scale(0);
+  visibility: hidden;
 }
 
 .ouvrir {
   transform: scale(1);
+  visibility: visible;
 }
 
 /* ---------------------------------------------------------

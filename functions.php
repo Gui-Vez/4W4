@@ -203,4 +203,6 @@ function trouve_la_categorie($tableau)
 	}
 }
 
+require_once("options/apparence.php");
+
 ?>
