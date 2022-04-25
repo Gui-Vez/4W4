@@ -9,6 +9,7 @@
     height: 50vh;
     transition: all 1s ease-in-out;
     transform: scale(0);
+    visibility: hidden;
 
     &_fermeture
     {
@@ -24,4 +25,5 @@
 .ouvrir
 {
     transform: scale(1);
+    visibility: visible;
 }

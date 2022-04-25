@@ -36,9 +36,10 @@
                         $titreFiltreCours = substr($titre, 3, -6);
                         $nbHeures = substr($titre, -6);
                         $sigleCours = substr($titre, 0, 4);
-                        $descCours = wp_trim_words(get_the_content(), 15, "<button class='cours__desc__ouvrir'>La suite</button>");
-                        // $descCours = get_the_excerpt();
+                        $desCours = get_the_content(); // Description complète du cours
                         ?>
+
+                        <code class="formation__cours__invisible"><?= $desCours ?></code>
 
                         <!-- Afficher l'image du cours -->
                         <?php the_post_thumbnail('thumbnail') ?>
@@ -54,7 +55,7 @@
                         <!-- Afficher le nombre d'heures, le sigle et la description de chaque cours -->
                         <div class="cours__nbre-heure"><?= $nbHeures; ?></div>
                         <p class="cours__sigle"><?= $sigleCours; ?> </p>
-                        <p class="cours__desc"> <?= $descCours; ?></p>
+                        <p class="cours__desc"> <?= wp_trim_words($desCours, 15, "<button class='cours__desc__ouvrir'>La suite</button>"); ?></p>
                         <p class="cours__departement"> <?= $departement; ?></p>
                     </article>
                 <?php endwhile ?>

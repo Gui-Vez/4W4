@@ -46,6 +46,11 @@
             width: 30%;
         }
         padding: 10px;
+
+        &__invisible
+        {
+            display: none;
+        }
     }
 
     .web
