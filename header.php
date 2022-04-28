@@ -15,6 +15,13 @@
     <!-- Inclure la balise meta de Wordpress -->
     <?php wp_head() ?>
 
+    <style>
+        .home::after
+        {
+            background-color: <?= get_theme_mod("background_clippath") ?>;
+        }
+    </style>
+
     <?php show_admin_bar(true); ?>
 </head>
 <body <?php body_class("site"); ?> style="background-color:<?= get_theme_mod("background_body") ?>;" >
