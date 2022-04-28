@@ -3,6 +3,7 @@
     position : absolute;
     transition : transform .3s;
     transform : rotate(0);
+    z-index: 99;
 }
 
 // Bouton associé au menu burger
@@ -12,17 +13,20 @@
 }
 
 // Lorsque le menu burger est cliqué, faire une rotation
-#chk-burger:checked ~ #burger {
-    transform : rotate(90deg);
-}
+// #chk-burger:checked ~ #burger
+// {
+//     transform : rotate(90deg);
+// }
 
 // Ne pas afficher le conteneur du menu principal
-.menu-principal-container {
+.menu-principal-container 
+{
     display : none;
 }
 
 // Lorsque le menu burger est activé, afficher le conteneur du menu principal
-#chk-burger:checked ~ .menu-principal-container{
+#chk-burger:checked ~ .menu-principal-container
+{
     display : block;
 }
 
@@ -57,12 +61,14 @@
 @media screen and (min-width : $largeur__media--tablette)
 {
     // Enlever le menu burger
-    #burger {
+    #burger
+    {
         display : none;
     }
 
     // Afficher le conteneur du menu principal
-    .menu-principal-container {
+    .menu-principal-container
+    {
         display : block;
     }
 
