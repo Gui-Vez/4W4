@@ -1,4 +1,4 @@
-# Exercice 3 - 4W4 - Conception d'interface et développement Web
+# Travail Pratique 2 - 4W4 - Conception d'interface et développement Web
 ### Auteur : Guillaume Vézina
 
 ```
