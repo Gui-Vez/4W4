@@ -15,6 +15,7 @@
     <!-- Inclure la balise meta de Wordpress -->
     <?php wp_head() ?>
 
+    <!-- Style du customizer -->
     <style>
         /* Clip-path */
         .home::after
@@ -22,6 +23,21 @@
             /* Couleur du fond du clip-path */
             background-color: <?= get_theme_mod("background_clippath") ?>;
         }
+
+        /* Groupe qui englobe le site */
+        .site
+        {
+            /* Couleur du fond du body */
+            background-color: <?= get_theme_mod("background_body") ?>;
+        }
+        
+        /*
+        .site__main
+        {
+            background-color: <?= get_theme_mod("background_clippath") ?>;
+        }
+        */
+
     </style>
 
     <?php show_admin_bar(true); ?>

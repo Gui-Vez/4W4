@@ -60,6 +60,12 @@ wp_nav_menu(array(
     </p>
 </div>
 
+
+<div class="boite__carrousel">
+    <button class="boite__carrousel__fermeture">X</button>
+    <section class="boite__carrousel__navigation"></section>
+</div>
+
 <!-- Obtenir le pied de page de Wordpress -->
 <?php wp_footer(); ?>
 </body>

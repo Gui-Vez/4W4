@@ -1,19 +1,71 @@
-.boite__modale
+.boite__modale, .boite__carrousel
 {
     position: absolute;
     top: 25vh;
     left: 25vw;
     border: 5px solid #aaa;
-    background-color: #f00;
     width: 50vw;
     height: 50vh;
     transition: all 1s ease-in-out;
     transform: scale(0);
     visibility: hidden;
+
+    &__fermeture
+    {
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        top: 10px;
+        left: 10px;
+        z-index: 99;
+    }
 }
 
 .ouvrir
 {
     transform: scale(1);
     visibility: visible;
+}
+
+.boite__modale
+{
+    background-color: #f00;
+}
+
+.boite__carrousel
+{
+    top: 12.5%;
+    left: 12.5%;
+    width: 75%;
+    height: auto;
+    background-color: gray;
+    
+    img
+    {
+        object-fit: cover;
+        width: 100%;
+    }
+
+    &__navigation
+    {
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        z-index: 99;
+        display: flex;
+        justify-content: center;
+
+        button
+        {
+            width: 20px;
+            height: 20px;
+            margin: 20px 10px;
+            border-radius: 100%;
+
+            &:focus
+            {
+                background-color: black;
+            }
+        }
+    }
 }
