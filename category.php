@@ -58,6 +58,7 @@
                         <p class="cours__desc"> <?= wp_trim_words($desCours, 15, "<button class='cours__desc__ouvrir'>La suite</button>"); ?></p>
                         <p class="cours__departement"> <?= $departement; ?></p>
                     </article>
+
                 <?php endwhile ?>
                 <?php endif ?>
         </div>
