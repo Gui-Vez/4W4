@@ -1,9 +1,8 @@
 @charset "UTF-8";
 /*
-theme name: Exercice 3 Guillaume Vézina
+theme name: Travail Pratique 2 Guillaume Vézina
 Author: Guillaume Vézina
 Author URI: https://github.com/Gui-Vez/4W4-vezina-guillaume
-SiteGround: http://eddym16.sg-host.com/
 Description: Ce thème est sujet d'un travail pratique en Web du cours 4W4 où l'objectif est d'inclure la liste des cours du TIM.
 Version: 1.0.0
 License: GNU General Public License v2 or later
@@ -967,12 +966,11 @@ Navigation catégorie cours
   justify-content: center;
 }
 
-.boite__modale {
+.boite__modale, .boite__carrousel {
   position: absolute;
   top: 25vh;
   left: 25vw;
   border: 5px solid #aaa;
-  background-color: #f00;
   width: 50vw;
   height: 50vh;
   transition: all 1s ease-in-out;
@@ -980,9 +978,55 @@ Navigation catégorie cours
   visibility: hidden;
 }
 
+.boite__modale__fermeture, .boite__carrousel__fermeture {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 10px;
+  left: 10px;
+  z-index: 99;
+}
+
 .ouvrir {
   transform: scale(1);
   visibility: visible;
+}
+
+.boite__modale {
+  background-color: #f00;
+}
+
+.boite__carrousel {
+  top: 12.5%;
+  left: 12.5%;
+  width: 75%;
+  height: auto;
+  background-color: gray;
+}
+
+.boite__carrousel img {
+  object-fit: cover;
+  width: 100%;
+}
+
+.boite__carrousel__navigation {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  z-index: 99;
+  display: flex;
+  justify-content: center;
+}
+
+.boite__carrousel__navigation button {
+  width: 20px;
+  height: 20px;
+  margin: 20px 10px;
+  border-radius: 100%;
+}
+
+.boite__carrousel__navigation button:focus {
+  background-color: black;
 }
 
 /* ---------------------------------------------------------
@@ -1023,6 +1067,8 @@ theme name: 4W4 - Guillaume Vézina
 .site__main {
   grid-area: main;
   background-color: rgba(99, 89, 185, 0.5);
+  display: flex;
+  align-items: center;
 }
 
 .site__main__single {
@@ -1163,8 +1209,6 @@ ANIMATIONS
   background-size: 200% auto;
   color: #fff;
   background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
   animation: textclip 2s linear infinite;
   display: inline-block;
   font-size: 75px;
@@ -1232,8 +1276,6 @@ h6 {
   background-repeat: no-repeat;
   background-size: 80%;
   animation: description 4s linear infinite;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: rgba(255, 255, 255, 0);
 }
 
 @keyframes description {

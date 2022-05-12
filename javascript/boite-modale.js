@@ -6,9 +6,7 @@
     
     // Variable description du cours
     let cours__desc__ouvrir = document.querySelectorAll('.cours__desc__ouvrir');
-
     let boite__modale__fermeture = document.querySelector('.boite__modale__fermeture');
-
 
     // Pour chaque bouton des descriptions de cours,
     for (const bout of cours__desc__ouvrir)
@@ -22,10 +20,8 @@
                 // Ajouter la classe "ouvrir" à la boite modale
                 boite__modale.classList.add('ouvrir');
 
-                // 
+                // Concaténer le texte de la boite modale au parent du parent de cet élément
                 boite__modale__texte.innerHTML = this.parentNode.parentNode.children[0].innerHTML
-
-                console.log(this.parentNode.parentNode.children[0].innerHTML);
             }
             
             // Sinon, l'enlever

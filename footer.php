@@ -29,8 +29,6 @@
         <h2 class="footer__titre">Vous ne trouvez pas ce que vous recherchiez ?</h2>
         <p class="footer__presentation">Essayez de cliquer sur ces liens ci-dessous...</p>
     </div>
-    
-
 <?php 
 
 // Création des menus de Wordpress
@@ -58,6 +56,13 @@ wp_nav_menu(array(
     <p class="boite__modale__texte">
         Ceci est un premier test de boite modale
     </p>
+</div>
+
+
+<div class="boite__carrousel">
+    <button class="boite__carrousel__fermeture">X</button>
+    <section class="boite__carrousel__navigation"></section>
+    <section class="boite__carrousel__img"></section>
 </div>
 
 <!-- Obtenir le pied de page de Wordpress -->

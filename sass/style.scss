@@ -1,8 +1,7 @@
 /*
-theme name: Exercice 3 Guillaume Vézina
+theme name: Travail Pratique 2 Guillaume Vézina
 Author: Guillaume Vézina
 Author URI: https://github.com/Gui-Vez/4W4-vezina-guillaume
-SiteGround: http://eddym16.sg-host.com/
 Description: Ce thème est sujet d'un travail pratique en Web du cours 4W4 où l'objectif est d'inclure la liste des cours du TIM.
 Version: 1.0.0
 License: GNU General Public License v2 or later
@@ -32,6 +31,7 @@ INITIALISATION
 /* ---------------------------------------------------------
 COMPOSANTES
 --------------------------------------------------------- */
+@import "composantes/accueil";
 @import "composantes/contenu";
 @import "composantes/cours";
 @import "composantes/footer";
@@ -41,6 +41,7 @@ COMPOSANTES
 @import "composantes/navigation_accueil";
 @import "composantes/recherche";
 @import "composantes/boite-modale";
+@import "composantes/galerie";
 
 /* ---------------------------------------------------------
 LAYOUT
