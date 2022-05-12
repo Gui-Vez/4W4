@@ -43,6 +43,8 @@ theme name: 4W4 - Guillaume Vézina
 {
     grid-area: main;
     background-color: rgba($color__background-main, .5);
+    display: flex;
+    align-items: center;
 
     &__single
     {

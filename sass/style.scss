@@ -32,6 +32,7 @@ INITIALISATION
 /* ---------------------------------------------------------
 COMPOSANTES
 --------------------------------------------------------- */
+@import "composantes/accueil";
 @import "composantes/contenu";
 @import "composantes/cours";
 @import "composantes/footer";
@@ -41,6 +42,7 @@ COMPOSANTES
 @import "composantes/navigation_accueil";
 @import "composantes/recherche";
 @import "composantes/boite-modale";
+@import "composantes/galerie";
 
 /* ---------------------------------------------------------
 LAYOUT
