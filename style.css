@@ -1209,8 +1209,6 @@ ANIMATIONS
   background-size: 200% auto;
   color: #fff;
   background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
   animation: textclip 2s linear infinite;
   display: inline-block;
   font-size: 75px;
@@ -1278,8 +1276,6 @@ h6 {
   background-repeat: no-repeat;
   background-size: 80%;
   animation: description 4s linear infinite;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: rgba(255, 255, 255, 0);
 }
 
 @keyframes description {
