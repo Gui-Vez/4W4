@@ -1,4 +1,4 @@
-# Travail Pratique 2 - 4W4 - Conception d'interface et développement Web
+# Épreuve finale - 4W4 - Conception d'interface et développement Web
 ### Auteur : Guillaume Vézina
 
 ```
