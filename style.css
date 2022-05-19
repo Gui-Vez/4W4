@@ -1152,6 +1152,10 @@ theme name: 4W4 - Guillaume Vézina
   text-align: center;
 }
 
+.front-page .menu-titre {
+  text-align: center;
+}
+
 .search__main {
   grid-area: main;
   background-color: #b8e9fc;

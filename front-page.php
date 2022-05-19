@@ -54,20 +54,26 @@
             <?php the_content(); ?>
         </h6>
 
-        <nav class="menu-accueil-container">
-            <?php wp_nav_menu(array("menu"=>"accueil",
-                                    "container"=>"nav")); ?>
-        </nav>
+        <h2 class="menu-titre">Accueil</h2>
 
-        <nav class="menu-evenement-container">
-            <?php wp_nav_menu(array("menu"=>"evenement",
-                                    "container"=>"nav")); ?>
-        </nav>
+            <nav class="menu-accueil-container">
+                <?php wp_nav_menu(array("menu"=>"accueil",
+                                        "container"=>"nav")); ?>
+            </nav>
 
-        <nav class="menu-atelier-container">
-            <?php wp_nav_menu(array("menu"=>"atelier",
-                                    "container"=>"nav")); ?>
-        </nav>
+        <h2 class="menu-titre">Évènements</h2>
+
+            <nav class="menu-evenement-container">
+                <?php wp_nav_menu(array("menu"=>"evenement",
+                                        "container"=>"nav")); ?>
+            </nav>
+
+        <h2 class="menu-titre">Ateliers</h2>
+
+            <nav class="menu-atelier-container">
+                <?php wp_nav_menu(array("menu"=>"atelier",
+                                        "container"=>"nav")); ?>
+            </nav>
     
         <?php endif ?>
     </div>
