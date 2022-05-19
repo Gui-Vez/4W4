@@ -54,6 +54,7 @@
             <?php the_content(); ?>
         </h6>
 
+        <!-- Menus -->
         <h2 class="menu-titre">Accueil</h2>
 
             <nav class="menu-accueil-container">
