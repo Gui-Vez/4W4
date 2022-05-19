@@ -63,6 +63,11 @@
             <?php wp_nav_menu(array("menu"=>"evenement",
                                     "container"=>"nav")); ?>
         </nav>
+
+        <nav class="menu-atelier-container">
+            <?php wp_nav_menu(array("menu"=>"atelier",
+                                    "container"=>"nav")); ?>
+        </nav>
     
         <?php endif ?>
     </div>

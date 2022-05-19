@@ -804,19 +804,22 @@ Navigation catégorie cours
 }
 
 .menu-accueil-container,
-.menu-evenement-container {
+.menu-evenement-container,
+.menu-atelier-container {
   display: flex;
   justify-content: center;
 }
 
 .menu-accueil-container #menu-evenement,
-.menu-evenement-container #menu-evenement {
+.menu-evenement-container #menu-evenement,
+.menu-atelier-container #menu-evenement {
   width: 80%;
   justify-content: center;
 }
 
 .menu-accueil-container #menu-evenement li,
-.menu-evenement-container #menu-evenement li {
+.menu-evenement-container #menu-evenement li,
+.menu-atelier-container #menu-evenement li {
   width: 20%;
   height: 80%;
   margin: 5px;
@@ -825,18 +828,24 @@ Navigation catégorie cours
 .menu-accueil-container #menu-evenement li hr, .menu-accueil-container #menu-evenement li .menu-item-description, .menu-accueil-container #menu-evenement li .menu-item-icone,
 .menu-evenement-container #menu-evenement li hr,
 .menu-evenement-container #menu-evenement li .menu-item-description,
-.menu-evenement-container #menu-evenement li .menu-item-icone {
+.menu-evenement-container #menu-evenement li .menu-item-icone,
+.menu-atelier-container #menu-evenement li hr,
+.menu-atelier-container #menu-evenement li .menu-item-description,
+.menu-atelier-container #menu-evenement li .menu-item-icone {
   display: none;
 }
 
 .menu-accueil-container #menu-evenement li a,
-.menu-evenement-container #menu-evenement li a {
+.menu-evenement-container #menu-evenement li a,
+.menu-atelier-container #menu-evenement li a {
   font-size: clamp(0.8rem, 1.5vw, 1rem);
 }
 
 .menu-accueil-container .menu, .menu-accueil-container ul,
 .menu-evenement-container .menu,
-.menu-evenement-container ul {
+.menu-evenement-container ul,
+.menu-atelier-container .menu,
+.menu-atelier-container ul {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -844,7 +853,9 @@ Navigation catégorie cours
 
 .menu-accueil-container .menu .accueil__cours .menu-item-icone, .menu-accueil-container ul .accueil__cours .menu-item-icone,
 .menu-evenement-container .menu .accueil__cours .menu-item-icone,
-.menu-evenement-container ul .accueil__cours .menu-item-icone {
+.menu-evenement-container ul .accueil__cours .menu-item-icone,
+.menu-atelier-container .menu .accueil__cours .menu-item-icone,
+.menu-atelier-container ul .accueil__cours .menu-item-icone {
   background-image: url("https://s2.svgbox.net/octicons.svg?ic=file-badge-bold");
 }
 
@@ -852,7 +863,11 @@ Navigation catégorie cours
 .menu-evenement-container .menu .menu-item,
 .menu-evenement-container .menu .page_item,
 .menu-evenement-container ul .menu-item,
-.menu-evenement-container ul .page_item {
+.menu-evenement-container ul .page_item,
+.menu-atelier-container .menu .menu-item,
+.menu-atelier-container .menu .page_item,
+.menu-atelier-container ul .menu-item,
+.menu-atelier-container ul .page_item {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -867,7 +882,11 @@ Navigation catégorie cours
 .menu-evenement-container .menu .menu-item a,
 .menu-evenement-container .menu .page_item a,
 .menu-evenement-container ul .menu-item a,
-.menu-evenement-container ul .page_item a {
+.menu-evenement-container ul .page_item a,
+.menu-atelier-container .menu .menu-item a,
+.menu-atelier-container .menu .page_item a,
+.menu-atelier-container ul .menu-item a,
+.menu-atelier-container ul .page_item a {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -881,7 +900,11 @@ Navigation catégorie cours
 .menu-evenement-container .menu .menu-item a .menu-item-description,
 .menu-evenement-container .menu .page_item a .menu-item-description,
 .menu-evenement-container ul .menu-item a .menu-item-description,
-.menu-evenement-container ul .page_item a .menu-item-description {
+.menu-evenement-container ul .page_item a .menu-item-description,
+.menu-atelier-container .menu .menu-item a .menu-item-description,
+.menu-atelier-container .menu .page_item a .menu-item-description,
+.menu-atelier-container ul .menu-item a .menu-item-description,
+.menu-atelier-container ul .page_item a .menu-item-description {
   font-size: clamp(0.8rem, 1.5vw, 1rem);
 }
 
@@ -889,7 +912,11 @@ Navigation catégorie cours
 .menu-evenement-container .menu .menu-item .menu-item-icone,
 .menu-evenement-container .menu .page_item .menu-item-icone,
 .menu-evenement-container ul .menu-item .menu-item-icone,
-.menu-evenement-container ul .page_item .menu-item-icone {
+.menu-evenement-container ul .page_item .menu-item-icone,
+.menu-atelier-container .menu .menu-item .menu-item-icone,
+.menu-atelier-container .menu .page_item .menu-item-icone,
+.menu-atelier-container ul .menu-item .menu-item-icone,
+.menu-atelier-container ul .page_item .menu-item-icone {
   border: 1px solid #aaa;
   width: 2rem;
   height: 2rem;
@@ -903,7 +930,11 @@ Navigation catégorie cours
 .menu-evenement-container .menu .menu-item .accueil__prof,
 .menu-evenement-container .menu .page_item .accueil__prof,
 .menu-evenement-container ul .menu-item .accueil__prof,
-.menu-evenement-container ul .page_item .accueil__prof {
+.menu-evenement-container ul .page_item .accueil__prof,
+.menu-atelier-container .menu .menu-item .accueil__prof,
+.menu-atelier-container .menu .page_item .accueil__prof,
+.menu-atelier-container ul .menu-item .accueil__prof,
+.menu-atelier-container ul .page_item .accueil__prof {
   font-size: clamp(0.8rem, 1.5vw, 1rem);
 }
 
@@ -911,7 +942,11 @@ Navigation catégorie cours
 .menu-evenement-container .menu .menu-item .accueil__aide,
 .menu-evenement-container .menu .page_item .accueil__aide,
 .menu-evenement-container ul .menu-item .accueil__aide,
-.menu-evenement-container ul .page_item .accueil__aide {
+.menu-evenement-container ul .page_item .accueil__aide,
+.menu-atelier-container .menu .menu-item .accueil__aide,
+.menu-atelier-container .menu .page_item .accueil__aide,
+.menu-atelier-container ul .menu-item .accueil__aide,
+.menu-atelier-container ul .page_item .accueil__aide {
   border: 1px solid #aaa;
   width: 2rem;
   height: 2rem;
@@ -920,7 +955,9 @@ Navigation catégorie cours
 
 .menu-accueil-container .menu .page_item, .menu-accueil-container ul .page_item,
 .menu-evenement-container .menu .page_item,
-.menu-evenement-container ul .page_item {
+.menu-evenement-container ul .page_item,
+.menu-atelier-container .menu .page_item,
+.menu-atelier-container ul .page_item {
   height: 75px;
   align-items: center;
   margin: 5px;
@@ -929,13 +966,17 @@ Navigation catégorie cours
 
 .menu-accueil-container .menu .page_item li, .menu-accueil-container ul .page_item li,
 .menu-evenement-container .menu .page_item li,
-.menu-evenement-container ul .page_item li {
+.menu-evenement-container ul .page_item li,
+.menu-atelier-container .menu .page_item li,
+.menu-atelier-container ul .page_item li {
   display: flex;
 }
 
 .menu-accueil-container .menu .page_item a, .menu-accueil-container ul .page_item a,
 .menu-evenement-container .menu .page_item a,
-.menu-evenement-container ul .page_item a {
+.menu-evenement-container ul .page_item a,
+.menu-atelier-container .menu .page_item a,
+.menu-atelier-container ul .page_item a {
   font-size: clamp(0.5rem, 1vw, 1.1rem);
   justify-content: center;
 }
