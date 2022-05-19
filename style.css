@@ -453,6 +453,11 @@ a {
   font-family: "Poppins", sans-serif;
 }
 
+.champ {
+  font-size: larger;
+  font-style: italic;
+}
+
 /* ---------------------------------------------------------
 COMPOSANTES
 --------------------------------------------------------- */
@@ -1372,5 +1377,22 @@ h6 {
 
 #chk-burger:checked ~ .burger .burger__ligne:nth-of-type(3) {
   clip-path: polygon(-7.1% 92.9%, 92.9% -7.1%, 107.1% 7.1%, 7.1% 107.1%);
+}
+
+.front-page .menu-item {
+  position: relative;
+}
+
+.front-page .menu-item-icone {
+  background-color: orange;
+  z-index: 99;
+  box-shadow: 1px 73px 83px 5px rgba(0, 0, 0, 0.95);
+  position: absolute;
+  bottom: 0;
+  transition: all 0.25s ease-in-out;
+}
+
+.front-page .menu-item:hover .menu-item-icone {
+  margin-bottom: 25%;
 }
 /*# sourceMappingURL=style.css.map */

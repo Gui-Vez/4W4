@@ -75,6 +75,15 @@
                 <?php wp_nav_menu(array("menu"=>"atelier",
                                         "container"=>"nav")); ?>
             </nav>
+
+        <h2 class="menu-titre">Ateliers</h2>
+        <p>À noter que ces éléments ci-bas ne sont que des catégories au lieu de pages et ne servent qu'à montrer qu'il est possible d'inclure une description et une image tout en faisant des animations CSS.</p>
+        <p><strong>Ne pas évaluer cette partie pour la saisie des champs personnalisés.</strong></p>
+
+            <nav class="menu-atelier-container">
+                <?php wp_nav_menu(array("menu"=>"atelier_menu_anime",
+                                        "container"=>"nav")); ?>
+            </nav>
     
         <?php endif ?>
     </div>

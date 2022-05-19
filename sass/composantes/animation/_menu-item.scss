@@ -1,0 +1,27 @@
+.front-page
+{
+    .menu-item
+    {
+        position: relative;
+
+        &-icone
+        {
+            background-color: orange;
+            z-index: 99;
+            box-shadow: 1px 73px 83px 5px rgba(0,0,0,0.95);
+
+            position: absolute;
+            bottom: 0;
+
+            transition: all 0.25s ease-in-out;
+        }
+
+        &:hover
+        {
+            .menu-item-icone
+            {
+                margin-bottom: 25%;
+            }
+        }
+    }
+}
